@@ -12,7 +12,7 @@ public class LaunchApplication {
 		driver.manage().window().maximize();
 		String strTitle = driver.getTitle();
 		
-		if(strTitle.contains("Cleartrip - Flights")){
+		if(strTitle.contains("Cleartrip - Flights") || strTitle.contains("MakeMyTrip")){
 			System.out.println("Application launched successfully");
 		}else{
 			System.out.println("Application failed to launch");
